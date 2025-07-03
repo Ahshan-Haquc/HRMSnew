@@ -1,11 +1,13 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Router from "./router/Router";
 
 function App() {
-
   return (
-    <div className='bg-amber-900'>
-       Hello World
-    </div>
-  )
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
